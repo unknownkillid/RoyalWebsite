@@ -27,7 +27,10 @@
 	</script>
 	<meta name="verification" content="112b975da7ed3348325403186301de" />
 	<script>
-		jQuery(function ($) {
+		let timeout = 1000;
+		setTimeout(() => {
+			jQuery(function ($) {
+		
 
 			var index = 'qpsstats-active-tab';
 			var dataStore = window.sessionStorage;
@@ -65,7 +68,7 @@
 				show: {
 					function(event, ui) {
 
-						alert('2');
+					alert('2');
 					},
 					effect: "fade",
 					direction: "right",
@@ -128,13 +131,8 @@
 					"width": activeWidth + "px"
 				});
 			}
-			window.onresize = function (event) {
-				slider_tabs();
-			};
-
-
-			slider_tabs();
 		})
+	}, timeout);
 	</script>
 	<style>
 		.ajs-message.ajs-default_rd {
@@ -484,7 +482,8 @@
 								</div>
 								<ul class="md_l contact_blc">
 									<li class="contact">
-										<a href="https://www.facebook.com/RoyalRoleplay1" target="_blank"><i class="fa-brands fa-facebook" style="font-size: 100px;"></i>
+										<a href="https://www.facebook.com/RoyalRoleplay1" target="_blank"><i
+												class="fa-brands fa-facebook" style="font-size: 100px;"></i>
 											<div class="grow">
 												<div class="h">
 													ოფიციალური Facebook გვერდი
@@ -497,7 +496,8 @@
 										</a>
 									</li>
 									<li class="contact">
-										<a href="https://www.tiktok.com/@royalrpge" target="_blank"><i class="fa-brands fa-tiktok" style="font-size: 100px; color: white;"></i>
+										<a href="https://www.tiktok.com/@royalrpge" target="_blank"><i
+												class="fa-brands fa-tiktok" style="font-size: 100px; color: white;"></i>
 											<div class="grow">
 												<div class="h">
 													ჩვენი TikTok
@@ -510,7 +510,9 @@
 										</a>
 									</li>
 									<li class="contact">
-										<a href="https://www.youtube.com/@royalroleplay3996" target="_blank"><i class="fa-brands fa-youtube" style="font-size: 100px; color: rgb(170, 5, 5);" ></i>
+										<a href="https://www.youtube.com/@royalroleplay3996" target="_blank"><i
+												class="fa-brands fa-youtube"
+												style="font-size: 100px; color: rgb(170, 5, 5);"></i>
 											<div class="grow">
 												<div class="h">
 													Youtube გვერდი
@@ -524,7 +526,9 @@
 										</a>
 									</li>
 									<li class="contact">
-										<a href="https://discord.gg/CM82cxdaYy" target="_blank"><i class="fa-brands fa-discord" style="font-size: 100px; color: #7800ff;"></i>
+										<a href="https://discord.gg/CM82cxdaYy" target="_blank"><i
+												class="fa-brands fa-discord"
+												style="font-size: 100px; color: #7800ff;"></i>
 											<div class="grow">
 												<div class="h">
 													ჩვენი Discord
@@ -786,29 +790,27 @@
 			$preloader.delay(500).fadeOut('slow');
 		});</script>
 
-	<!— Yandex.Metrika counter —>
-		<script type="text/javascript">
-			(function (m, e, t, r, i, k, a) {
-				m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-				m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-			})
-				(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+	<script type="text/javascript">
+		(function (m, e, t, r, i, k, a) {
+			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+			m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+		})
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-			ym(53059735, "init", {
-				clickmap: true,
-				trackLinks: true,
-				accurateTrackBounce: true,
-				webvisor: true
-			});
-		</script>
-		<noscript>
-			<div><img src="https://mc.yandex.ru/watch/53059735" style="position:absolute; left:-9999px;" alt="" /></div>
-		</noscript>
-		<!— /Yandex.Metrika counter —>
+		ym(53059735, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true,
+			webvisor: true
+		});
+	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/53059735" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
 
-			<div id="fp-nav">
-				<ul></ul>
-			</div>
+	<div id="fp-nav">
+		<ul></ul>
+	</div>
 </body>
 
 </html>
